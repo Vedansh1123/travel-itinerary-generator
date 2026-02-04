@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Itinary Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>AI Travel Itinerary Generator</h1>
+    <p>Plan your trip smartly using AI automation</p>
+
+    <form id="itineraryForm">
+        <label>Destination:</label>
+        <input type="text" id="destination" required>
+
+        <label>Number of days:</label>
+        <input type="number" id="days" required>
+
+        <label>Budget:</label>
+        <input type="number" id="budget" required>
+
+        <label>Mode of Travel:</label>
+        <select id="travelMode" required>
+            <option value="">Select</option>
+            <option>Bus</option>
+            <option>Train</option>
+            <option>Flight</option>
+            <option>Car</option>
+        </select>
+
+        <label>Number of Travelers:</label>
+        <input type="number" id="travelers" required>
+
+        <label>Email Address:</label>
+        <input type="email" id="email" required>
+
+        <label>Additinal preferences (optional):</label>
+        <textarea id="preferences"></textarea>
+
+        <button type="submit">Generate Itinerary</button>
+    </form>
+
+
+    <p id="message"></p>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
